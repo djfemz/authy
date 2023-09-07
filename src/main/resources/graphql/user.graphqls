@@ -1,0 +1,15 @@
+type User{
+    id:ID!
+    email:String
+    name:String
+    password:String
+    isActive:Boolean
+}
+
+type Query{
+    getUser(id:ID):User
+}
+
+type Mutation{
+    addUser(email:String, password:String):User
+}
